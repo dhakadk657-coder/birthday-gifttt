@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #f8cdda, #fbc2eb);
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #d6336c;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.section {
+  margin-top: 60px;
+}
+
+.poetry {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.poetry p {
+  font-style: italic;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.secret-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+button {
+  padding: 12px 28px;
+  background: #d6336c;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#secret {
+  display: none;
+  margin-top: 25px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  color: #555;
+}
+</style>
+
+<script>
+function showSecret() {
+  document.getElementById("secret").style.display = "block";
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Birthday 🎂</h1>
+<p class="subtitle">
+To someone who became a memory worth keeping.
+</p>
+
+<div class="gallery">
+  <img src="pics/img1.jpg">
+  <img src="pics/img2.jpg">
+  <img src="pics/img3.jpg">
+  <img src="pics/img4.jpg">
+</div>
+
+<div class="section">
+<h2>✍️</h2>
+<div class="poetry">
+<p>
+uske chehre ka manzar<br>
+aankhon ke aage jhool raha hai,<br><br>
+
+main karta hoon usse baatein,<br>
+aur zamana mujhe bewakoof bol raha hai.<br><br>
+
+agar tune dekha hota<br>
+meri nazron se ek baar uski taraf,<br><br>
+
+tu bhi keh deta —<br>
+zamana qayamat ko bhool raha hai.
+</p>
+</div>
+</div>
+
+<div class="section secret-area">
+<h2>One last thing 🔐</h2>
+<button onclick="showSecret()">Only if you really want to know</button>
+
+<div id="secret">
+<p>
+<!-- REPLACE THIS WITH YOUR REAL SECRET NOTE -->
+This space is reserved for words that matter.
+</p>
+</div>
+</div>
+
+<footer>
+— From someone who chose honesty over noise
+</footer>
+
+</div>
+
+</body>
+</html>
